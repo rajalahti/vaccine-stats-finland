@@ -61,7 +61,7 @@ const options = {
           color: 'black',
           display: true,
           autoSkip: true,
-          maxTicksLimit: 10,
+          maxTicksLimit: 8,
         },
       },
     ],
@@ -69,7 +69,7 @@ const options = {
 };
 
 export default function Linechart(props) {
-  data.labels = props.data.dates && props.data.dates.map((date) => date.date);
+  data.labels = props.data.dates && props.data.dates.map((date) => date.date.slice(0, 5).replace('/','.'));
   data.datasets[0].data =
     props.data.dates && props.data.dates.map((date) => date.percentage);
   return (

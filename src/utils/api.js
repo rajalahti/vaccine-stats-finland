@@ -23,8 +23,6 @@ let getDateArray = function (start, end) {
 let dateArray = getDateArray(startDate, endDate);
 dateArray = dateArray.map((item) => (item = format(item, "dd/MM/yyyy")));
 
-console.log(dateArray);
-
 export const getData = async () => {
   const response = await axios.get(
     "https://w3qa5ydb4l.execute-api.eu-west-1.amazonaws.com/prod/finnishVaccinationData"
@@ -85,7 +83,5 @@ export const getData = async () => {
     days: vaccinationData.daysUntillVaccinated70,
   }), 'dd.MM.yyyy');
   
-
-  console.log(vaccinationData);
   return vaccinationData;
 };
