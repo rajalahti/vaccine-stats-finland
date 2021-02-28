@@ -16,6 +16,7 @@ export default function Timeline(props) {
         className="timeline_background"
         src="./covid_vaccine.jpg"
         alt="Kovid rokote"
+        style={{width: '100%', height: '100%'}}
       />
       <Fade right>
         <blockquote className="timeline_overlay_top">
