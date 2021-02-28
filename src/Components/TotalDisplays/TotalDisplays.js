@@ -47,8 +47,6 @@ export default function TotalDisplays(props) {
     hyksVaccinationPercentage,
   } = props.data;
 
-  console.log(props);
-
   return (
     <section className={classes.root} style={{margin: '0 auto'}}>
       <Grid container spacing={0} alignItems="center" justify="center">
