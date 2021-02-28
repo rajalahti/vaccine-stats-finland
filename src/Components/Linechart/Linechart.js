@@ -73,8 +73,8 @@ export default function Linechart(props) {
   data.datasets[0].data =
     props.data.dates && props.data.dates.map((date) => date.percentage);
   return (
-    <section>
+    <figure>
       <Line data={data} options={options} />
-    </section>
+    </figure>
   );
 }

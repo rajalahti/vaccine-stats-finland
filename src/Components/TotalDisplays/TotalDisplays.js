@@ -18,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.secondary,
-    margin: 20
+    color: theme.palette.text.primary,
+    margin: 20,
   },
   result: {
     color: "green",
@@ -54,7 +54,7 @@ export default function TotalDisplays(props) {
       <Grid container spacing={0} alignItems="center" justify="center">
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
-            <Typography variant="h5" component="h2" >
+            <Typography variant="h3" component="h2" >
               Suomi
               <Divider style={{marginTop: 10}}/>
             </Typography>
@@ -68,7 +68,7 @@ export default function TotalDisplays(props) {
         </Grid>
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h3" component="h2">
               HYKS-alue
               <Divider style={{marginTop: 10}}/>
             </Typography>
