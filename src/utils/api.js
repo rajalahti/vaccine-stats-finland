@@ -57,10 +57,11 @@ export const getData = async () => {
   );
 
   vaccinationData.dates = vaccinationData.dates.map((date) => {
-    let currentShots = data.find(
+    let current = data.find(
       (x) =>
         format(new Date(x.date), "dd/MM/yyyy") === date && x.area === "Finland"
-    ).shots;
+    );
+    let currentShots = current && current.shots;
     return {
       date: date,
       shots: currentShots,
